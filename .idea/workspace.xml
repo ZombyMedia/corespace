@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1c8da4f3-4e22-4ca9-9763-0b3ca8d43aa8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/services/transaction/core/assets/generatePid.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/transaction/core/assets/registerServiceWorker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transaction/core/processTransactions.php" beforeDir="false" afterPath="$PROJECT_DIR$/services/transaction/core/processTransactions.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="development" />
+                    <option name="lastUsedInstant" value="1589471507" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1589471279" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bu3YI05ZPKwRybF90ZqhpLAYCQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c8da4f3-4e22-4ca9-9763-0b3ca8d43aa8" name="Default Changelist" comment="" />
+      <created>1589468196946</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589468196946</updated>
+      <workItem from="1589468198344" duration="2120000" />
+      <workItem from="1589470334948" duration="952000" />
+      <workItem from="1589471349040" duration="2255000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add new version of the processTransactions.php replacing the old completeTransaction.php.&#10;&#10;transaction worker is now using a registration pid (process id)">
+      <created>1589470589700</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589470589700</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add new version of the processTransactions.php replacing the old completeTransaction.php.&#10;&#10;&gt;&gt; transaction worker is now using a registration pid (process id)" />
+    <MESSAGE value="Add new version of the processTransactions.php replacing the old completeTransaction.php.&#10;&#10;transaction worker is now using a registration pid (process id)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new version of the processTransactions.php replacing the old completeTransaction.php.&#10;&#10;transaction worker is now using a registration pid (process id)" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="588" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589469272017">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="588" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1589469272017" />
+    <state x="390" y="33" width="1197" height="1038" key="CommitChangelistDialog2" timestamp="1589470589542">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="390" y="33" width="1197" height="1038" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1589470589542" />
+    <state x="789" y="474" width="399" height="157" key="NewPhpFileDialog" timestamp="1589471738978">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="789" y="474" width="399" height="157" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1589471738978" />
+    <state x="482" y="187" key="SettingsEditor" timestamp="1589470319312">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1589470319312" />
+    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1589470598654">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1589470598654" />
+  </component>
+</project>
