@@ -1,0 +1,19 @@
+{
+  "name": "corespace",
+  "version": "1.0.0",
+  "description": "Core datastorage and user management system",
+  "main": "master.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dsums",
+    "datastorage",
+    "user",
+    "management",
+    "database",
+    "api"
+  ],
+  "author": "ZombyMediaIC",
+  "license": "ISC"
+}

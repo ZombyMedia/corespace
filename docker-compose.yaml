@@ -1,0 +1,76 @@
+####################################################################
+## ZOUPA - (ZombyMediaIC open source usage protection agreement)  ##
+## License as of: 10.05.2020 19:41 | #202005101941                ##
+## Niklas Vorberg (AsP3X)                                         ##
+####################################################################
+version: '2'
+
+services:
+  db:
+    image: mariadb
+    container_name: corespace_db_1
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=EZWK4ZPd4YsJpkjzKPkTe7vYge2UESa5vxAnudyWqG6w
+      - MYSQL_PASSWORD=Zomby.0207
+      - MYSQL_DATABASE=corespace
+      - MYSQL_USER=corespace
+    ports:
+      - 3307:3306
+    networks:
+      - corespace
+      - proxy
+    logging:
+      options:
+        max-size: '12m'
+        max-file: '5'
+      driver: json-file
+
+  api:
+    image: zombymediaic/zapache2:latest
+    volumes:
+      - ./services/api/:/var/www/html/
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /opt/containers/traefik/data:/data
+    labels:
+      - "traefik.enable=true"
+      - "traefik.port=80"
+      - "traefik.docker.network=proxy"
+      # Entrypoint and TLS
+      - "traefik.http.routers.datacore.entrypoints=https"
+      - "traefik.http.routers.datacore.rule=Host(`datacore.corespace.de`)" # Put in your hostname here, e.g. subdomain.domain.tld
+      - "traefik.http.routers.datacore.tls.certresolver=http"
+      # Middlewares:
+      - "traefik.http.routers.datacore.middlewares=cloud@docker,cloud-dav@docker"
+      # Middleware cloud adds additional headers:
+      - "traefik.http.middlewares.datacore.headers.customFrameOptionsValue=SAMEORIGIN"
+      - "traefik.http.middlewares.datacore.headers.framedeny=true"
+      - "traefik.http.middlewares.datacore.headers.sslredirect=true"
+      - "traefik.http.middlewares.datacore.headers.stsIncludeSubdomains=true"
+      - "traefik.http.middlewares.datacore.headers.stsPreload=true"
+      - "traefik.http.middlewares.datacore.headers.stsSeconds=15552000"
+    #ports:
+    #  - "2020:80"
+    networks:
+      - corespace
+      - proxy
+    restart: always
+
+  transaction:
+    image: zombymediaic/zcron:latest
+    volumes:
+      - ./services/transaction/core/:/programm
+      - ./services/transaction/engine/:/etc/crontabs
+    networks:
+      - corespace
+      - proxy
+    restart: always
+
+networks:
+  proxy:
+    external: true
+  corespace: # this network is part of the nextcloud stack
+    external:
+      name: corespace_backend
