@@ -1,0 +1,55 @@
+####################################################################
+## ZOUPA - (ZombyMediaIC open source usage protection agreement)  ##
+## License as of: 10.05.2020 19:41 | #202005101941                ##
+## Niklas Vorberg (AsP3X)                                         ##
+####################################################################
+version: '2'
+
+services:
+  db:
+    image: mariadb
+    container_name: corespace_db_1
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=EZWK4ZPd4YsJpkjzKPkTe7vYge2UESa5vxAnudyWqG6w
+      - MYSQL_PASSWORD=Zomby.0207
+      - MYSQL_DATABASE=corespace
+      - MYSQL_USER=corespace
+    ports:
+      - 3307:3306
+    networks:
+      - corespace
+    logging:
+      options:
+        max-size: '12m'
+        max-file: '5'
+      driver: json-file
+
+  api:
+    image: zombymediaic/zapache2:latest
+    volumes:
+      - ./services/api/:/var/www/html/
+    ports:
+      - "2020:80"
+    links:
+      - db
+    networks:
+      - corespace
+    restart: always
+
+  transaction:
+    image: zombymediaic/zcron:latest
+    volumes:
+      - ./services/transaction/core/:/programm
+      - ./services/transaction/engine/:/etc/crontabs
+    links:
+      - db
+    networks:
+      - corespace
+    restart: always
+
+networks:
+  corespace:
+    external:
+      name: corespace_backend

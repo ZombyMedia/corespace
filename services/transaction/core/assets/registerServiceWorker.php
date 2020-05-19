@@ -1,2 +1,22 @@
 <?php
-    $cid = "51ba108469bb979da044569be9a4c3e0798b836e6f07747b310c4c2cfe012b55";
+
+    function checkIfAlreadyExists($conn, $processID) {
+        $sql = "SELECT startstamp FROM processors WHERE pid=\"$processID\"";
+        $result = $conn->query($sql);
+        while($row = $result->fetch_assoc()) {
+            return $row["startstamp"];
+        }
+    }
+
+    function registerServiceWorker($conn, $processID) {
+        $date = getDateStamp();
+        $sql = "INSERT INTO processors(pid, startstamp) VALUES (\"$processID\", \"$date\")";
+        $result = $conn->query($sql);
+    }
+
+    function updateServiceWorkerTimeStamp($conn, $processID) {
+        $date = getDateStamp();
+        $sql = "UPDATE processors SET startstamp=$date WHERE pid=\"$processID\"";
+        $result = $conn->query($sql);
+    }
+
