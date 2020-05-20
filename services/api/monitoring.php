@@ -87,5 +87,22 @@ require('assets/DBConnector.php');
           }
         ?>
     </table>
+    <tr>
+    <table>
+      <tr>
+        <th scope="col">ProcessID</th>
+        <th scope="col">Startstamp</th>
+      </tr>
+        <?php
+          $sql2 = "SELECT * FROM processors";
+          $result2 = $conn->query($sql2);
+          while($row2 = $result2->fetch_assoc()) {
+            echo "<tr class=\"users-display\">";
+            echo "<td class=\"users\">" . $row2["pid"] . "</td>";
+            echo "<td class=\"users\">" . $row2["startstamp"] . "</td>";
+            echo "</tr>";
+          }
+        ?>
+    </table>
   </body>
 </html>

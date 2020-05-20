@@ -36,6 +36,11 @@ CREATE TABLE bank (
     PRIMARY KEY(bid)
 );
 
+CREATE TABLE processors (
+	pid VARCHAR(255) UNIQUE NOT NULL,
+    startstamp VARCHAR(255) NOT NULL
+);
+
 CREATE TABLE transactions (
 	tid VARCHAR(255) UNIQUE NOT NULL,
     credits BIGINT,

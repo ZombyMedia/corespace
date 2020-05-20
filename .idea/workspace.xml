@@ -21,11 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1c8da4f3-4e22-4ca9-9763-0b3ca8d43aa8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/master.js" beforeDir="false" afterPath="$PROJECT_DIR$/master.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/transaction/core/completeTransaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/services/transaction/core/completeTransaction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/transaction/core/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/services/transaction/core/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/mainstructure.sql" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mainstructure.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/monitoring.php" beforeDir="false" afterPath="$PROJECT_DIR$/services/api/monitoring.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +107,8 @@
       <workItem from="1589895804396" duration="251000" />
       <workItem from="1589916463175" duration="651000" />
       <workItem from="1589955529598" duration="80000" />
-      <workItem from="1589955623597" duration="75000" />
+      <workItem from="1589955623597" duration="292000" />
+      <workItem from="1589969154549" duration="449000" />
     </task>
     <task id="LOCAL-00001" summary="Add new version of the processTransactions.php replacing the old completeTransaction.php.&#10;&#10;transaction worker is now using a registration pid (process id)">
       <created>1589470589700</created>
@@ -135,6 +133,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add new version of the processTransactions.php replacing the old completeTransaction.php.&#10;&#10;&gt;&gt; transaction worker is now using a registration pid (process id)" />
