@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1c8da4f3-4e22-4ca9-9763-0b3ca8d43aa8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local-docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/transaction/core/assets/generatePid.php" beforeDir="false" afterPath="$PROJECT_DIR$/services/transaction/core/assets/generatePid.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/transaction/core/assets/registerServiceWorker.php" beforeDir="false" afterPath="$PROJECT_DIR$/services/transaction/core/assets/registerServiceWorker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/transaction/core/processTransactions.php" beforeDir="false" afterPath="$PROJECT_DIR$/services/transaction/core/processTransactions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/master.js" beforeDir="false" afterPath="$PROJECT_DIR$/master.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transaction/core/completeTransaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/services/transaction/core/completeTransaction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transaction/core/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/services/transaction/core/run.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +89,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -89,7 +107,10 @@
       <workItem from="1589496243754" duration="29000" />
       <workItem from="1589580193843" duration="782000" />
       <workItem from="1589891909933" duration="3880000" />
-      <workItem from="1589895804396" duration="98000" />
+      <workItem from="1589895804396" duration="251000" />
+      <workItem from="1589916463175" duration="651000" />
+      <workItem from="1589955529598" duration="80000" />
+      <workItem from="1589955623597" duration="75000" />
     </task>
     <task id="LOCAL-00001" summary="Add new version of the processTransactions.php replacing the old completeTransaction.php.&#10;&#10;transaction worker is now using a registration pid (process id)">
       <created>1589470589700</created>
@@ -103,6 +124,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add new version of the processTransactions.php replacing the old completeTransaction.php.&#10;&#10;&gt;&gt; transaction worker is now using a registration pid (process id)" />
@@ -126,10 +158,11 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="789" y="474" width="399" height="157" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1589471738978" />
-    <state x="482" y="187" key="SettingsEditor" timestamp="1589895789765">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="486" y="187" width="1404" height="737" key="SettingsEditor" timestamp="1589955698767">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1589895789765" />
+    <state x="486" y="187" width="1404" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1589955698767" />
     <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1589470598654">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
