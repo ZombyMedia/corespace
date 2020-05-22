@@ -73,6 +73,8 @@ require('assets/DBConnector.php');
         <th scope="col">Credits</th>
         <th scope="col">Sender</th>
         <th scope="col">Receiver</th>
+        <th scope="col">Processor</th>
+        <th scope="col">Killcode</th>
       </tr>
         <?php
           $sql2 = "SELECT * FROM transactions";
@@ -83,6 +85,8 @@ require('assets/DBConnector.php');
             echo "<td class=\"users\">" . $row2["credits"] . "</td>";
             echo "<td class=\"users\">" . $row2["sender"] . "</td>";
             echo "<td class=\"users\">" . $row2["receiver"] . "</td>";
+            echo "<td class=\"users\">" . $row2["processor"] . "</td>";
+            echo "<td class=\"users\">" . $row2["killcode"] . "</td>";
             echo "</tr>";
           }
         ?>

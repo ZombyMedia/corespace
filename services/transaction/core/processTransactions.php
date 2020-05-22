@@ -15,3 +15,5 @@
         echo "Registering service worker... \n";
         registerServiceWorker($conn, "$processID");
     }
+
+

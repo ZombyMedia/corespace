@@ -5,7 +5,7 @@
 // ## Niklas Vorberg (AsP3X)                                         ##
 // ####################################################################
 
-$servername = "corespace.de:3307";
+$servername = "corespace_db_1";
 $username = "corespace";
 $password = "Zomby.0207";
 $database = "corespace";

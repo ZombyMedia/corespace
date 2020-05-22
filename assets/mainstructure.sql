@@ -45,5 +45,7 @@ CREATE TABLE transactions (
 	tid VARCHAR(255) UNIQUE NOT NULL,
     credits BIGINT,
     sender VARCHAR(255) NOT NULL,
-    receiver VARCHAR(255) NOT NULL
+    receiver VARCHAR(255) NOT NULL,
+    processor VARCHAR(255),
+    killcode VARCHAR(255)
 );
