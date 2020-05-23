@@ -20,13 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c8da4f3-4e22-4ca9-9763-0b3ca8d43aa8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/services/transaction/core/assets/registerTransaction.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/command.sql" beforeDir="false" afterPath="$PROJECT_DIR$/assets/command.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/mainstructure.sql" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mainstructure.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/api/monitoring.php" beforeDir="false" afterPath="$PROJECT_DIR$/services/api/monitoring.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/api/service/users/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/services/api/service/users/register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/transaction/core/assets/DBConnector.php" beforeDir="false" afterPath="$PROJECT_DIR$/services/transaction/core/assets/DBConnector.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transaction/core/assets/generatePid.php" beforeDir="false" afterPath="$PROJECT_DIR$/services/transaction/core/assets/generatePid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transaction/core/assets/registerServiceWorker.php" beforeDir="false" afterPath="$PROJECT_DIR$/services/transaction/core/assets/registerServiceWorker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transaction/core/assets/registerTransaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/services/transaction/core/assets/registerTransaction.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/transaction/core/processTransactions.php" beforeDir="false" afterPath="$PROJECT_DIR$/services/transaction/core/processTransactions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +113,8 @@
       <workItem from="1589955623597" duration="292000" />
       <workItem from="1589969154549" duration="1048000" />
       <workItem from="1589987524113" duration="1632000" />
-      <workItem from="1590173599234" duration="633000" />
+      <workItem from="1590173599234" duration="1234000" />
+      <workItem from="1590200892812" duration="64000" />
     </task>
     <task id="LOCAL-00001" summary="Add new version of the processTransactions.php replacing the old completeTransaction.php.&#10;&#10;transaction worker is now using a registration pid (process id)">
       <created>1589470589700</created>
