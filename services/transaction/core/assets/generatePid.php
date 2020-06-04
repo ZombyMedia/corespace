@@ -1,12 +1,10 @@
-<!--
+<?php
 ####################################################################
 ## ZOUPA - (ZombyMediaIC open source usage protection agreement)  ##
 ## License as of: 10.05.2020 19:41 | #202005101941                ##
 ## Niklas Vorberg (AsP3X)                                         ##
 ####################################################################
--->
 
-<?php
     // Get containerID from the script running docker container
     // The containerID is Unique and can only be used by one container
 

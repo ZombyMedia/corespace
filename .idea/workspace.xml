@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c8da4f3-4e22-4ca9-9763-0b3ca8d43aa8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/services/transaction/core/assets/transactionManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/transaction/core/assets/DBConnector.php" beforeDir="false" afterPath="$PROJECT_DIR$/services/transaction/core/assets/DBConnector.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/transaction/core/assets/generatePid.php" beforeDir="false" afterPath="$PROJECT_DIR$/services/transaction/core/assets/generatePid.php" afterDir="false" />
@@ -115,6 +116,8 @@
       <workItem from="1589987524113" duration="1632000" />
       <workItem from="1590173599234" duration="1234000" />
       <workItem from="1590200892812" duration="64000" />
+      <workItem from="1591227332455" duration="3000" />
+      <workItem from="1591276525186" duration="4812000" />
     </task>
     <task id="LOCAL-00001" summary="Add new version of the processTransactions.php replacing the old completeTransaction.php.&#10;&#10;transaction worker is now using a registration pid (process id)">
       <created>1589470589700</created>
@@ -147,10 +150,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add new version of the processTransactions.php replacing the old completeTransaction.php.&#10;&#10;transaction worker is now using a registration pid (process id)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="588" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589469272017">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="292" y="406" width="1397" height="301" key="#SQL_Dialects" timestamp="1591277526511">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="292" y="406" width="1397" height="301" key="#SQL_Dialects/72.27.1848.1053@72.27.1848.1053" timestamp="1591277526511" />
+    <state x="592" y="214" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591277600729">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="588" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1589469272017" />
+    <state x="592" y="214" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1591277600729" />
     <state x="390" y="33" width="1197" height="1038" key="CommitChangelistDialog2" timestamp="1589470589542">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
