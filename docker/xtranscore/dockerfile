@@ -1,0 +1,11 @@
+FROM alpine:latest
+MAINTAINER ZombyMediaIC
+
+RUN apk update && apk upgrade
+RUN apk add php7 php7-fpm php7-opcache php7-mysqli
+RUN apk add nano wget mysql
+
+RUN mkdir /programm && mkdir /programm/core && mkdir /programm/engine
+WORKDIR /programm
+
+CMD ["/bin/sh", "/programm/engine/transactionX.sh"]

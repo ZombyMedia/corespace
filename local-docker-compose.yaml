@@ -39,15 +39,14 @@ services:
     restart: always
 
   transaction:
-    image: zombymediaic/zcron:latest
+    image: zombymediaic/xtranscore:1.0
     volumes:
-      - ./services/transaction/core/:/programm
-      - ./services/transaction/engine/:/etc/crontabs
+      - ./services/transaction/core/:/programm/core
+      - ./services/transaction/engine/:/programm/engine
     links:
       - db
     networks:
       - corespace
-    restart: always
 
 networks:
   corespace:

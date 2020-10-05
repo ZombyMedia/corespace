@@ -32,6 +32,5 @@
         echo "Registering service worker... \n";
         // registering service worker in database (can only exist onetime with id)
         registerServiceWorker($conn, "$processID");
+        $output = shell_exec('php completeTransaction.php');
     }
-
-

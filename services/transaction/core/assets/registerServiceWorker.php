@@ -24,4 +24,3 @@
         $sql = "UPDATE processors SET startstamp=$date WHERE pid=\"$processID\"";
         $result = $conn->query($sql);
     }
-
