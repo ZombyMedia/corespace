@@ -59,10 +59,9 @@ services:
     restart: always
 
   transaction:
-    image: zombymediaic/zcron:latest
+    image: zombymediaic/zapache2:latest
     volumes:
       - ./services/transaction/core/:/programm
-      - ./services/transaction/engine/:/etc/crontabs
     networks:
       - corespace
       - proxy

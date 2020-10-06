@@ -7,4 +7,4 @@
 ####################################################################
 
 today=`date +"%Y-%m-%d %T"`
-php7.2 completeTransaction.php && echo "$today: Script executed " >> /var/www/html/log.txt
+php completeTransaction.php && echo "$today: Script executed " >> /var/www/html/log.txt

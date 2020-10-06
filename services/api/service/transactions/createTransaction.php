@@ -26,9 +26,13 @@
     }
   }
 
-  $transactionID = rand(1 , 99999999);
-  $creditAmount = $_POST["amount"];
-  $receiver = $_POST["receiver"];
-  $sender = $_POST["sender"];
+  if (!$_POST["amount"]==null && !$_POST["receiver"]==null && !$_POST["sender"]==null) {
+    $transactionID = rand(1 , 99999999);
+    $creditAmount = $_POST["amount"];
+    $receiver = $_POST["receiver"];
+    $sender = $_POST["sender"];
 
-  createBankAccount($conn, $transactionID, $creditAmount, $receiver, $sender);
+    createBankAccount($conn, $transactionID, $creditAmount, $receiver, $sender);
+  } else {
+    echo "Transaction request got denied: one of the required filds is not filled";
+  }

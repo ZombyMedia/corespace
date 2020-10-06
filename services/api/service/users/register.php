@@ -55,10 +55,6 @@ function createBankAccount($conn, $bankid) {
   }
 }
 
-
-
-$email = $_POST["email"];
-
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
   if (checkPasswordLength($password) == "true") {
     $hashpass = createPasswordHash($password);
