@@ -13,10 +13,25 @@
         }
     }
 
+    function getRunCounter($conn, $processID) {
+        $sql = "SELECT runcount FROM processors WHERE pid=\"$processID\"";
+        $result = $conn->query($sql);
+        while($row = $result->fetch_assoc()) {
+            return $row["runcount"];
+        }
+    }
+
     function registerServiceWorker($conn, $processID) {
         $date = getDateStamp();
-        $sql = "INSERT INTO processors(pid, startstamp) VALUES (\"$processID\", \"$date\")";
+        $sql = "INSERT INTO processors(pid, startstamp, runcount) VALUES (\"$processID\", \"$date\", 1)";
         $result = $conn->query($sql);
+    }
+
+    function updateServiceWorkerRunCounter($conn, $processID) {
+        $runCounter = getRunCounter($conn, $processID) + 1;
+        $sql = "UPDATE processors SET runcount=$runCounter WHERE pid=\"$processID\"";
+        $result = $conn->query($sql);
+        return $runCounter;
     }
 
     function updateServiceWorkerTimeStamp($conn, $processID) {

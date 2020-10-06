@@ -96,6 +96,7 @@ require('assets/DBConnector.php');
       <tr>
         <th scope="col">ProcessID</th>
         <th scope="col">Startstamp</th>
+        <th scope="col">RunCounter</th>
       </tr>
         <?php
           $sql2 = "SELECT * FROM processors";
@@ -104,6 +105,7 @@ require('assets/DBConnector.php');
             echo "<tr class=\"users-display\">";
             echo "<td class=\"users\">" . $row2["pid"] . "</td>";
             echo "<td class=\"users\">" . $row2["startstamp"] . "</td>";
+            echo "<td class=\"users\">" . $row2["runcount"] . "</td>";
             echo "</tr>";
           }
         ?>

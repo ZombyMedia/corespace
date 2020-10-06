@@ -21,6 +21,9 @@
         // Updating timestamp to prevent removal
         updateServiceWorkerTimeStamp($conn, $processID);
 
+        updateServiceWorkerRunCounter($conn, $processID);
+        // echo "The runcounter was updated to: " . $runCounter;
+
         // checking if transaction is available
         // only continues if transaction is available and no process has been registered
         if ($tid = checkForTransactions($conn, $processID) != "") {

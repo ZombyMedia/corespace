@@ -38,7 +38,8 @@ CREATE TABLE bank (
 
 CREATE TABLE processors (
 	pid VARCHAR(255) UNIQUE NOT NULL,
-    startstamp VARCHAR(255) NOT NULL
+  startstamp VARCHAR(255) NOT NULL,
+	runcount BIGINT
 );
 
 CREATE TABLE transactions (
