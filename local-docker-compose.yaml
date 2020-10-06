@@ -20,6 +20,8 @@ services:
       - 3307:3306
     networks:
       - corespace
+    volumes:
+      - ./assets/mysql-dump:/docker-entrypoint-initdb.d
     logging:
       options:
         max-size: '12m'

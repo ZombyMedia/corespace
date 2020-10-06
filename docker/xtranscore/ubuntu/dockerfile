@@ -1,0 +1,8 @@
+FROM ubuntu:latest
+MAINTAINER ZombyMediaIC
+
+RUN apt-get update
+RUN apt-get upgrade -y
+
+RUN mkdir /programm && mkdir /programm/core && mkdir /programm/engine
+WORKDIR /programm
