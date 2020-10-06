@@ -12,7 +12,7 @@
 
     // Generated from generatePid.php file
     $processID = getContainerID();
-
+    $tid = -1;
 
 
     if (checkIfAlreadyExists($conn, $processID)) {
@@ -22,18 +22,20 @@
         updateServiceWorkerTimeStamp($conn, $processID);
 
         updateServiceWorkerRunCounter($conn, $processID);
-        // echo "The runcounter was updated to: " . $runCounter;
 
-        // checking if transaction is available
-        // only continues if transaction is available and no process has been registered
-        if ($tid = checkForTransactions($conn, $processID) != "") {
-            // registering transaction to prevent collision
-            echo reservTransaction($conn, $tid, $processID);
+        $tid = checkForTransactions($conn, $processID);
+
+        if($tid != "") {
+          echo "transaction found: " . $tid;
+          echo reservTransaction($conn, $tid, $processID);
+          shell_exec("php /programm/core/completeTransaction.php");
+        } else {
+          echo "No transaction found";
         }
     } else {
         echo "No Service Worker matching: " . $processID;
         echo "Registering service worker... \n";
         // registering service worker in database (can only exist onetime with id)
         registerServiceWorker($conn, "$processID");
-        $output = shell_exec('php completeTransaction.php');
+        // $output = shell_exec('php completeTransaction.php');
     }

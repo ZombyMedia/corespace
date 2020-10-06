@@ -21,10 +21,10 @@ require('assets/DBConnector.php');
     <link rel="stylesheet" href="assets/styles/css/monitoring.css">
 
     <script type="text/javascript">
-      var timeout = setTimeout("location.reload(true);",2000);
+      var timeout = setTimeout("location.reload(true);",5000);
       function resetTimeout() {
         clearTimeout(timeout);
-        timeout = setTimeout("location.reload(true);",2000);
+        timeout = setTimeout("location.reload(true);",5000);
       }
     </script>
   </head>
