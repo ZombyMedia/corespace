@@ -1,0 +1,51 @@
+body, html {
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display:table;
+}
+body {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+@font-face {
+    font-family: 'codeenvy'; /*a name to be used later*/
+    src: url('codeenvy.ttf'); /*URL to font*/
+}
+
+form {
+    display:table;/* shrinks to fit conntent */
+    margin:auto;
+}
+textarea {
+    display: table;
+    margin: auto;
+    width: 30%;
+    height: 500px;
+    background-color: black;
+    color: #00C853;
+    border-style: inset;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+#command {
+  background-color: black;
+  font-family: codeenvy;
+  font-style: oblique;
+  font-size: 18px;
+  margin-top: 5px;
+  padding: 4px;
+  width: 400px;
+  height: 40px;
+  color: white;
+
+  border-radius: 5px;
+  border-width: 1px:
+  border-style: solid;
+  border-color: black;
+}

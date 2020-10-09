@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>corespace console interface</title>
+    <link rel="stylesheet" href="./master.css">
+    <link href="./favicon.ico" rel="icon" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <!-- Formular with the commandinput -->
+    <!-- Textarea is used for display of the command output and log -->
+    <textarea form="form" id="console-output" class="console-output"></textarea>
+    <form method="post" name="form" enctype="multipart/form-data" onSubmit="return false;">
+      <input type="text" name="command" id="command" placeholder="Enter Command" required/>
+      <input type="submit" id="submit_button" name="submit" value="EXECUTE" />
+    </form>
+
+    <script>
+      // handling the console output and styling
+      // appending the output on the console
+      function displayConsole(text, data) {
+        textarea_content = document.getElementById("console-output").value;
+        document.getElementById("console-output").value = textarea_content + "\n" + text;
+      }
+
+      function clearCommandInput(wait) {
+        setTimeout(function() {
+          document.getElementById("command").value = "";
+        }, wait*1000);
+      }
+
+      function Sleep(milliseconds) {
+        return new Promise(resolve => setTimeout(resolve, milliseconds));
+      }
+
+      $(document).ready(function() {
+        $("form").on("submit", function(event) {
+          $.ajax({
+            type: 'POST',
+            url: '../app.php',
+            data: $( this ).serialize(),
+            success: function(data, textStatus, jqXHR) {
+              if (data == "clear") {
+                document.getElementById('console-output').value = "";
+                console.log("Clear console executed");
+                clearCommandInput(0.5);
+              } else {
+                console.log(data);
+                displayConsole("EXE: " + document.getElementById("command").value);
+                clearCommandInput(0.5);
+                displayConsole("RESP:" + data);
+              }
+            }
+          });
+        });
+      });
+
+      var textarea = document.getElementById('console-output');
+      setInterval(function(){
+          textarea.scrollTop = textarea.scrollHeight;
+      }, 100);
+    </script>
+  </body>
+</html>
